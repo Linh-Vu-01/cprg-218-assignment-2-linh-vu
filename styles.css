@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{ 
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    background-color:#f3e9dc;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color:#c29666;
+    color:white;
+}
+button{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:snow;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: transparent;
+}
+main{
+    display: flex;
+    margin: 20px;
+    padding: 40px;
+    background-color:#e8d1a7;
+    border-radius: 20px;
+}
+img, paragraph{
+    flex: 1;
+}
+#photo{
+    max-width: 1000px;
+}
+h2{
+    font-size: 26px;
+}
+section{
+    padding-left: 40px;
+}
+p{
+    font-size: 20px;
+}
+footer {
+    background-color:#c29666;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.introduction{
+    #introduction{
+        background-color:#e8d1a7;
+    }
+}
+.vietnam{
+    background-color:#f6ebe7;
+    header{
+        background-color:#c08b89;
+    }
+    #vietnam{
+        background-color:#eac3bf;
+    }
+    main{
+        background-color:#eac3bf;
+    }
+}
+.mexico{
+    background-color:#f3f3ea;
+    header{
+        background-color:#76805d;
+    }
+    #mexico{
+        background-color:#c7d2ab;
+    }
+    main{
+        background-color:#c7d2ab;
+    }
+}
+.canada{
+    background-color:#f4efe6;
+    header{
+        background-color:#788fa1;
+    }
+    #canada{
+        background-color:#c8d7de;
+    }
+    main{
+        background-color:#d6e0e2;
+    }
+}
+
+@media (max-width: 1800px){
+    #photo{
+        max-height: 400px;
+    }
+}
+@media (max-width: 929px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   #photo{
+    max-width: 500px;
+    min-width: 200px;
+    width: 100%;
+    height: auto;
+   }
+   section{
+    padding: 0;
+   }
+}
+@media (max-width: 630px){
+    header{
+        text-align: center;
+    }
+    button{
+        display: flex;
+        flex-direction: column;
+    }
+}
